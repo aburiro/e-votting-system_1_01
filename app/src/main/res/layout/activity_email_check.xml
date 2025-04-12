@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:padding="20dp">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your email"
+        android:textSize="20sp"
+        android:textColor="#3388FF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- Instruction Text 1 -->
+    <TextView
+        android:id="@+id/instructionText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We sent a reset link to contact@dscode...com"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <!-- Instruction Text 2 -->
+    <TextView
+        android:id="@+id/instructionText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="enter 5 digit code that mentioned in the email"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/instructionText1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <!-- OTP Input Container -->
+    <LinearLayout
+        android:id="@+id/otpContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionText2"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- OTP Digit 1 -->
+        <EditText
+            android:id="@+id/otpDigit1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp" />
+
+        <!-- OTP Digit 2 -->
+        <EditText
+            android:id="@+id/otpDigit2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp" />
+
+        <!-- OTP Digit 3 -->
+        <EditText
+            android:id="@+id/otpDigit3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp" />
+
+        <!-- OTP Digit 4 -->
+        <EditText
+            android:id="@+id/otpDigit4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp" />
+
+        <!-- OTP Digit 5 -->
+        <EditText
+            android:id="@+id/otpDigit5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Error Message (Initially hidden) -->
+    <TextView
+        android:id="@+id/otpErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect OTP. Please try again."
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        android:layout_below="@id/otpContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <!-- Reset Password Button -->
+    <Button
+        android:id="@+id/resetPasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/otpErrorText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_back_primary15"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Resend Email Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resetPasswordButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haven't got the email yet? "
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/resendEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend email"
+            android:textSize="14sp"
+            android:textColor="#3388FF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

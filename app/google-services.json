@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302755573692",
+    "project_id": "e-votting-system-b83ce",
+    "storage_bucket": "e-votting-system-b83ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302755573692:android:1da415e47c5fcbb3d3c5b9",
+        "android_client_info": {
+          "package_name": "com.example.e_votting_system_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR6ffccx5ArbztIzsWygLT5JpgDbRdHNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

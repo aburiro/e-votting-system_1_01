@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#D3D3D3">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:padding="10dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm your choice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#3388FF"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Candidate Info Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/result" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name\nother details\nwhich are required"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/confirmCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I understand that my vote is final and cannot be changed once submitted."
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:buttonTint="#000000"
+        android:textColor="#000000" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:background="@drawable/round_back_primary15"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#989898"
+        android:enabled="false" />
+</LinearLayout>
