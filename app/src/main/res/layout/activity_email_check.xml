@@ -124,6 +124,17 @@
             android:inputType="number"
             android:maxLength="1"
             android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/otpDigit6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
     <!-- Error Message (Initially hidden) -->

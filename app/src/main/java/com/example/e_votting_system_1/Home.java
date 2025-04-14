@@ -36,8 +36,8 @@ public class Home extends AppCompatActivity {
 
         // Settings click
         settingsCard.setOnClickListener(v -> {
-//            Intent intent = new Intent(DashboardActivity.this, SettingsActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(Home.this, Settings.class);
+            startActivity(intent);
        });
     }
 }

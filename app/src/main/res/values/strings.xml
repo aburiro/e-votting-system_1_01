@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">e-votting-system_1</string>
+    <!-- Forgot Password Activity -->
+    <string name="back_button">Back button</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_instruction">Please enter your registered email to receive password reset instructions</string>
+    <string name="email_label">Your Email</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="reset_password_button">Reset Password</string>
+
+    <!-- You can add other strings used in your app here -->
 </resources>
