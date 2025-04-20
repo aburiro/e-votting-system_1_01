@@ -1,13 +1,11 @@
 package com.example.e_votting_system_1;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class Results_BBA extends Activity {
+public class Result_Media extends Activity {
 
     private ImageView backArrow;
     private TextView bottomTotalBar;
@@ -32,6 +30,6 @@ public class Results_BBA extends Activity {
 
         // Optional: Show total votes dynamically (you can calculate this dynamically too)
         int totalVotes = 240 + 180 + 130;
-        bottomTotalBar.setText("BBA total votes " + totalVotes);
+        bottomTotalBar.setText("CS total votes " + totalVotes);
     }
 }

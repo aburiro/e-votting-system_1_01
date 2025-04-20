@@ -2,9 +2,6 @@ package com.example.e_votting_system_1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -15,29 +12,22 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home); // Replace with your layout filename
+        setContentView(R.layout.activity_home);
 
-        // Bind the cards
-        voteCard = findViewById(R.id.voteCard);
-        resultsCard = findViewById(R.id.resultsCard);
-       settingsCard = findViewById(R.id.settingsCard);
+        voteCard     = findViewById(R.id.voteCard);
+        resultsCard  = findViewById(R.id.resultsCard);
+        settingsCard = findViewById(R.id.settingsCard);
 
-        // Vote Now click
-       voteCard.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, Vote_now.class);
-            startActivity(intent);
-        });
+        voteCard.setOnClickListener(v ->
+                startActivity(new Intent(Home.this, Vote_now.class))
+        );
 
-        // Results click
-        resultsCard.setOnClickListener(v -> {
-          Intent intent = new Intent(Home.this, Result_department.class);
-           startActivity(intent);
-       });
+        resultsCard.setOnClickListener(v ->
+                startActivity(new Intent(Home.this, Result_department.class))
+        );
 
-        // Settings click
-        settingsCard.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, Settings.class);
-            startActivity(intent);
-       });
+        settingsCard.setOnClickListener(v ->
+                startActivity(new Intent(Home.this, Settings.class))
+        );
     }
 }

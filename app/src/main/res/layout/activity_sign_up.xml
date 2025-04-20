@@ -19,7 +19,6 @@
             android:padding="10dp"
             android:src="@drawable/ic_arrow_back" />
 
-        <!-- Title -->
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
@@ -31,7 +30,6 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <!-- Enter Username -->
         <EditText
             android:id="@+id/usernameEditText"
             android:layout_width="match_parent"
@@ -39,15 +37,11 @@
             android:layout_below="@id/titleText"
             android:layout_marginTop="40dp"
             android:background="@drawable/round_back_dark_blu5_15"
-            android:gravity="center"
             android:hint="Enter Username"
             android:inputType="text"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <!-- Enter Email Id -->
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
@@ -55,15 +49,11 @@
             android:layout_below="@id/usernameEditText"
             android:layout_marginTop="15dp"
             android:background="@drawable/round_back_dark_blu5_15"
-            android:gravity="center"
             android:hint="Enter Email Id"
             android:inputType="textEmailAddress"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <!-- Enter CMS Id -->
         <EditText
             android:id="@+id/cmsIdEditText"
             android:layout_width="match_parent"
@@ -71,47 +61,47 @@
             android:layout_below="@id/emailEditText"
             android:layout_marginTop="15dp"
             android:background="@drawable/round_back_dark_blu5_15"
-            android:gravity="center"
             android:hint="Enter CMS Id"
             android:inputType="number"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <!-- Enter Department -->
+        <!-- New phone number field (optional) -->
         <EditText
-            android:id="@+id/departmentEditText"
+            android:id="@+id/phoneNumberEditText"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_below="@id/cmsIdEditText"
             android:layout_marginTop="15dp"
             android:background="@drawable/round_back_dark_blu5_15"
-            android:gravity="center"
-            android:hint="Enter Department"
-            android:inputType="text"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
+            android:hint="Enter Phone Number (Optional)"
+            android:inputType="phone"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <!-- Enter password -->
+        <!-- Department Spinner instead of EditText -->
+        <Spinner
+            android:id="@+id/departmentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/phoneNumberEditText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_back_dark_blu5_15"
+            android:padding="10dp"
+            android:spinnerMode="dropdown" />
+
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_below="@id/departmentEditText"
+            android:layout_below="@id/departmentSpinner"
             android:layout_marginTop="15dp"
             android:background="@drawable/round_back_dark_blu5_15"
-            android:gravity="center"
             android:hint="Enter password"
             android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <!-- Confirm password -->
         <EditText
             android:id="@+id/confirmPasswordEditText"
             android:layout_width="match_parent"
@@ -119,31 +109,26 @@
             android:layout_below="@id/passwordEditText"
             android:layout_marginTop="15dp"
             android:background="@drawable/round_back_dark_blu5_15"
-            android:gravity="center"
             android:hint="Confirm password"
             android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <!-- Bottom Container -->
         <LinearLayout
             android:id="@+id/bottomContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/confirmPasswordEditText"
-            android:layout_marginBottom="30dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
             android:orientation="vertical">
 
-            <!-- Register Button -->
             <Button
                 android:id="@+id/registerButton"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/round_back_primary15"
-                android:text="Add"
+                android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />

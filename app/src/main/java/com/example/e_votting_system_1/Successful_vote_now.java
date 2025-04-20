@@ -23,6 +23,7 @@ public class Successful_vote_now extends AppCompatActivity {
                 Intent intent = new Intent(Successful_vote_now.this, Home.class);
                 startActivity(intent);
                 finish(); // optional: finish this screen so user can't go back to success screen
+
             }
         });
     }

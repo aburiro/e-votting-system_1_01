@@ -37,6 +37,14 @@ android {
 }
 
 dependencies {
+
+    //blockchain
+    implementation("org.web3j:core:4.9.4")
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation("com.google.code.gson:gson:2.8.9")
+    //
+    
+
     implementation ("com.google.firebase:firebase-database:21.0.0")
 
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))

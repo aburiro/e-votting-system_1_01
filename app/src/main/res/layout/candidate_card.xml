@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voterItemLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -11,6 +12,7 @@
     android:foreground="?attr/selectableItemBackground">
 
     <ImageView
+        android:id="@+id/voterImage"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@drawable/ic_vote_box"
@@ -19,12 +21,14 @@
         android:background="@drawable/round_back_white_15" />
 
     <LinearLayout
+        android:id="@+id/voterDetailsLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/voterName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
@@ -33,6 +37,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/voterDetail1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="other details"
@@ -41,6 +46,7 @@
             android:layout_marginTop="5dp" />
 
         <TextView
+            android:id="@+id/voterDetail2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="which are"
@@ -48,6 +54,7 @@
             android:textColor="#000000" />
 
         <TextView
+            android:id="@+id/voterDetail3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="required"

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -5,14 +6,13 @@
     android:padding="16dp"
     android:background="#D3D3D3">
 
-    <!-- Back Button and Title -->
+    <!-- Header with Back Button -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="#3388FF"
         android:gravity="center_vertical">
-
 
         <ImageView
             android:id="@+id/backButton"
@@ -32,63 +32,71 @@
             android:layout_marginStart="8dp" />
     </LinearLayout>
 
-    <!-- Search Field -->
-    <EditText
-        android:id="@+id/searchField"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:hint="Search"
-        android:drawableStart="@drawable/ic_search"
-        android:background="#FFFFFF"
-        android:paddingStart="12dp"
-        android:layout_marginTop="12dp" />
-
-    <!-- Sample Selected Department Tag -->
-    <Button
-        android:id="@+id/selectedTag"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BBA"
-        android:textAllCaps="false"
-        android:backgroundTint="#3388FF"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="12dp" />
-
-    <!-- Department List -->
+    <!-- Department Buttons -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:orientation="vertical">
 
             <Button
-                style="@style/DepartmentButton"
-                android:text="Computer Science" />
+                android:id="@+id/btn_bba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BBA"
+                android:layout_marginBottom="8dp"
+                style="@style/DepartmentButton"/>
 
             <Button
-                style="@style/DepartmentButton"
-                android:text="Electrical Engineering" />
+                android:id="@+id/btn_computer_science"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer Science"
+                android:layout_marginBottom="8dp"
+                style="@style/DepartmentButton"/>
 
             <Button
-                style="@style/DepartmentButton"
-                android:text="Media and Communications" />
+                android:id="@+id/btn_electrical_engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electrical Engineering"
+                android:layout_marginBottom="8dp"
+                style="@style/DepartmentButton"/>
 
             <Button
-                style="@style/DepartmentButton"
-                android:text="Mathematics" />
+                android:id="@+id/btn_media_communications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Media and Communications"
+                android:layout_marginBottom="8dp"
+                style="@style/DepartmentButton"/>
 
             <Button
-                style="@style/DepartmentButton"
-                android:text="Education" />
+                android:id="@+id/btn_mathematics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mathematics"
+                android:layout_marginBottom="8dp"
+                style="@style/DepartmentButton"/>
 
             <Button
-                style="@style/DepartmentButton"
-                android:text="Physical Education" />
+                android:id="@+id/btn_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:layout_marginBottom="8dp"
+                style="@style/DepartmentButton"/>
+
+            <Button
+                android:id="@+id/btn_physical_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Physical Education"
+                style="@style/DepartmentButton"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
